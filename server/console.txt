@@ -1,0 +1,13 @@
+npm init 
+npm i express
+
+.babelrc  setup -> { "presets": ["@babel/preset-env"] }
+
+npm install @babel/preset-env @babel/cli @babel/node  --save-dev       // for installing babel
+
+inside package.json file setup inside scripts "start": "babel-node index"
+
+install npm i nodemon
+
+inside package.json file setup inside scripts "dev": "nodemon --exec babel-node index"
+
