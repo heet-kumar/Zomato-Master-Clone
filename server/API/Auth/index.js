@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 // Models
 
-import {UserModel} from "../../database/user/index";
+import { UserModel } from "../../database/user";
 
 const Router = express.Router();
 

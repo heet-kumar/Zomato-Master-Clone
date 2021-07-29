@@ -22,7 +22,8 @@ zomato.use(express.urlencoded({ extended: false}));
 zomato.use(helmet());   // for more security
 zomato.use(cors());
 
-// zomato.
+// Application Routes
+zomato.use("/auth", Auth)
 
 zomato.get("/", (req,res) => res.json({ message: "Setup success" }));
 
