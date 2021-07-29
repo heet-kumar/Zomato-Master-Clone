@@ -26,4 +26,11 @@ zomato.use(cors());
 
 zomato.get("/", (req,res) => res.json({ message: "Setup success" }));
 
-zomato.listen(4000, () => console.log("Server is running "));
+zomato.listen(4000, () => 
+    ConnectDB()
+    .then(() => console.log("Server is running "))
+    .catch(
+        ()=> console.log("Server is running, but database connection failed... ")
+    ) 
+
+);
