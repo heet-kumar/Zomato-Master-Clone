@@ -12,14 +12,14 @@ import Auth from "./API/Auth"
 
 //Database connection
 
-import Connection from "../server/database/connection";
+import ConnectDB from "../server/database/connection";
 
 const zomato = express();
 
 // application middlewares
 zomato.use(express.json());
 zomato.use(express.urlencoded({ extended: false}));
-zomato.use(helmet());
+zomato.use(helmet());   // for more security
 zomato.use(cors());
 
 // zomato.
